@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "env0-bucket" {
   bucket = "env0-122312-bucket"
+  acl = "public-read"
   tags = {
     Name        = "env0-bucket"
   }
