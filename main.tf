@@ -4,3 +4,6 @@ resource "aws_s3_bucket" "env0-bucket" {
     Name        = "env0-bucket"
   }
 }
+output "bucket_url" {
+  value = aws_s3_bucket.env0-bucket.bucket_domain_name
+}
